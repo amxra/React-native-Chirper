@@ -9,7 +9,7 @@ function Retweet({item}){
     return(
         <View>
             <Text style = {styles.footerText}> 
-            {item.rtnumber}
+            {/* {item.rtnumber} */}
             {rt}
             <TouchableOpacity
                 onPress = {onPress}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/EvilIcons';
+import Retweet from './ChirpBits/Retweet';
 
 function Chirp({item}){
     return(
@@ -38,14 +39,7 @@ function Chirp({item}){
                                 {item.commentNo}
                             </Text>
                             <Text style = {styles.listChirpFooterText}>
-                                <TouchableOpacity>
-                                    <Icon
-                                    name = "retweet"
-                                    size = {23}
-                                    color = '#a8a8a8'
-                                    />
-                                </TouchableOpacity>
-                                {item.rtnumber}
+                                <Retweet item = {item}/>
                             </Text>
                             <Text style = {styles.listChirpFooterText}>
                             <Icon
