@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import { v4 as uuid } from 'uuid';
 import AddChirp from './AddChirp';
 import ChirpListHeader from './ChirpListHeader';
@@ -58,9 +58,9 @@ function ChirpList (){
     return(
         <View>
             <ChirpListHeader/>
-            <AddChirp/>
+            <AddChirp addChirp = {addChirp}/>
             <View>
-                
+                <FlatList data = {item} renderItem = {({item}) => <Chirp item = {item}/>}/>
             </View>
         </View>
     )
