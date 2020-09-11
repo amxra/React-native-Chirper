@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, StyleSheet, TextInput, TouchableOpacity, Button} from 'react-native';
 
 
 
-function AddChirp(){
+function AddChirp({addChirp}){
+
+    const [chirp, setChirp] = useState('')
+    const onChange = textValue => setChirp(textValue)
+
     return (
         <View style = {styles.chirpArea}>
             <TextInput
                 placeholder = "What's popping?"
                 style = {styles.input}
-                // onChangeText = {onChange}
+                onChangeText = {onChange}
             />
             <TouchableOpacity style = {styles.btn} onPress ={() => addChirp(chirp)}>
                 <Button 
                     style = {styles.btnText}
                     title = "chirp"
-                    // onPress = {() => addChirp(chirp)}
+                    onPress = {() => addChirp(chirp)}
                     color = '#fff'
                     />
             </TouchableOpacity>
