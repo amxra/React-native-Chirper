@@ -21,8 +21,6 @@ const styles = StyleSheet.create({
   appContainer:{
     flex: 1,
     paddingTop: 60,
-    display: "flex",
-    alignItems: "center"
   },
   foot:{
     position : "relative"

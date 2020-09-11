@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: '#c8c8c8',
         flexDirection: "row",
-        width: 412,
         justifyContent: "space-between",
         paddingBottom: 10,
         paddingLeft: 25,
