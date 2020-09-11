@@ -8,7 +8,7 @@ import Chirp from './Chirp';
 
 function ChirpList (){
 
-    const [item, setItem] = useState([
+    const [items, setItems] = useState([
         {
             id: uuid(),
             imgUrl: 'https://pbs.twimg.com/profile_images/1277045112959311887/5gqnEOp1_400x400.jpg',
@@ -60,7 +60,7 @@ function ChirpList (){
             <ChirpListHeader/>
             <AddChirp addChirp = {addChirp}/>
             <View>
-                <FlatList data = {item} renderItem = {({item}) => <Chirp item = {item}/>}/>
+                <FlatList data = {items} renderItem = {({item}) => <Chirp item = {item}/>}/>
             </View>
         </View>
     )
