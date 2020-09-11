@@ -32,6 +32,27 @@ function ChirpList (){
           }
     ])
 
+    function addChirp(chirp){
+        if(!chirp){
+          Alert.alert('Oops', "You haven't entered any text", {text: 'OK'});
+        }
+        else{
+          setItems(prevItems => {
+            return [ {
+              id: uuid(), 
+              text: chirp, 
+              imgUrl: 'https://pbs.twimg.com/profile_images/1287903743976103939/TMAD8w1K_400x400.jpg',
+              time: '5s',
+              name: 'amira',
+              username : 'amira',
+              commentNo : 0,
+              rtnumber: 0,
+              likesNumber: 0
+            }, ...prevItems]
+          })
+        }
+      }
+
 
 
     return(
