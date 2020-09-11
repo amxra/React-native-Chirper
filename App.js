@@ -1,17 +1,20 @@
 import React from 'react';
 import { View, ScrollView, StyleSheet, Text} from 'react-native';
+import { NativeRouter, Route } from 'react-router-native';
 import Footer from './components/Footer';
 import ChirpList from './components/ChirpList';
 
 
 function App(){
   return(
-    <View style = {styles.appContainer}>
+    <NativeRouter>
+      <View style = {styles.appContainer}>
         <ScrollView>
-          <ChirpList/>
+        <Route exact path = '/' component = {ChirpList}/>
         </ScrollView >
         <Footer/>
-    </View>
+      </View>
+    </NativeRouter>
   )
 }
 
