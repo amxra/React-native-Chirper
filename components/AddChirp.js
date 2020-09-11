@@ -5,7 +5,7 @@ import { View, StyleSheet, TextInput, TouchableOpacity, Button} from 'react-nati
 
 function AddChirp(){
     return (
-        <View>
+        <View style = {styles.chirpArea}>
             <TextInput
                 placeholder = "What's popping?"
                 style = {styles.input}
