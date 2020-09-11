@@ -1,15 +1,14 @@
 import React from 'react';
 import { View, ScrollView, StyleSheet, Text} from 'react-native';
 import Footer from './components/Footer';
-import AddChirp from './components/AddChirp'
+import ChirpList from './components/ChirpList';
 
 
 function App(){
   return(
     <View style = {styles.appContainer}>
         <ScrollView>
-          <AddChirp/>
-          <Text>Hello</Text>
+          <ChirpList/>
         </ScrollView >
         <Footer/>
     </View>
