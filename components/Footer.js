@@ -1,16 +1,22 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { Link } from 'react-router-native';
+
 
 function Footer(){
     return(
         <View style = {styles.footerContainer}>
             <View style = {styles.footer}>
-                <Icon
-                    name = 'home'
-                    size = {30}
-                    color = '#a8a8a8'
-                />
+                <Link>
+                    <TouchableOpacity>
+                        <Icon
+                            name = 'home'
+                            size = {30}
+                            color = '#a8a8a8'
+                        />
+                    </TouchableOpacity>
+                </Link>
                 <Icon
                     name = 'search'
                     size = {30}
