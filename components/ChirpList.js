@@ -1,10 +1,37 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import { v4 as uuid } from 'uuid';
 import AddChirp from './AddChirp';
 import ChirpListHeader from './ChirpListHeader';
 
 
 function ChirpList (){
+
+    const chirps = [
+        {
+            id: uuid(),
+            imgUrl: 'https://pbs.twimg.com/profile_images/1277045112959311887/5gqnEOp1_400x400.jpg',
+            time: '3m',
+            name: 'Moyo',
+            username: 'moyoo',
+            text:'I deserve really nice shoes that i can barely afford tbh',
+            commentNo: 1,
+            rtnumber: 9,
+            likesNumber: 29
+          },
+          { id: uuid(), 
+            imgUrl: 'https://pbs.twimg.com/profile_images/1246930223544795136/lkzFDM1k_400x400.jpg',
+            time: '6m',
+            name: 'Tosin',
+            username: 'tos',
+            text:'Tried to diet today, bruh the way that hunger hooked me ehn, I found myself asking for jara on my jollof rice 🥴',
+            commentNo: 2,
+            rtnumber: 33,
+            likesNumber: 473
+          }
+    ]
+
+
     return(
         <View>
             <ChirpListHeader/>
