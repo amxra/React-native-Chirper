@@ -7,7 +7,7 @@ function Footer(){
         <View style = {styles.footerContainer}>
             <View style = {styles.footer}>
                 <Icon
-                    name = 'home-outline'
+                    name = 'home'
                     size = {30}
                     color = '#a8a8a8'
                 />
