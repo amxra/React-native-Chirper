@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text } from 'react-native';
 import { v4 as uuid } from 'uuid';
 import AddChirp from './AddChirp';
 import ChirpListHeader from './ChirpListHeader';
+import Chirp from './Chirp';
 
 
 function ChirpList (){
 
-    const chirps = [
+    const [item, setItem] = useState([
         {
             id: uuid(),
             imgUrl: 'https://pbs.twimg.com/profile_images/1277045112959311887/5gqnEOp1_400x400.jpg',
@@ -29,13 +30,17 @@ function ChirpList (){
             rtnumber: 33,
             likesNumber: 473
           }
-    ]
+    ])
+
 
 
     return(
         <View>
             <ChirpListHeader/>
             <AddChirp/>
+            <View>
+                
+            </View>
         </View>
     )
 }
