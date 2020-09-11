@@ -20,7 +20,7 @@ export default App;
 const styles = StyleSheet.create({
   appContainer:{
     flex: 1,
-    paddingTop: 100,
+    paddingTop: 60,
     display: "flex",
     alignItems: "center"
   },
