@@ -19,7 +19,10 @@ export default App;
 
 const styles = StyleSheet.create({
   appContainer:{
-    flex: 1, 
+    flex: 1,
+    paddingTop: 100,
+    display: "flex",
+    alignItems: "center"
   },
   foot:{
     position : "relative"
