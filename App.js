@@ -1,12 +1,15 @@
 import React from 'react';
-import { View, ScrollView, StyleSheet} from 'react-native';
+import { View, ScrollView, StyleSheet, Text} from 'react-native';
+import Footer from './components/Footer'
+
 
 function App(){
   return(
     <View style = {styles.appContainer}>
         <ScrollView>
-
+          <Text>Hello</Text>
         </ScrollView >
+        <Footer/>
     </View>
   )
 }
