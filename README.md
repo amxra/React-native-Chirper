@@ -16,7 +16,9 @@
 # Useful Dependencies 
 
     * Vector icons for icons : "npm i react-native-vector-icons"
+    
       - link icons and other assets by running "react-native link assetName"
+      
     * UUID for random id generation : "npm i uuidv4"
     * react-router for navigation: "npm i react-router-native
     
